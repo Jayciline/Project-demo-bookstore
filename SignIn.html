@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Books.com</title>
+    <link rel="stylesheet" href="./Final-project.css" />
+    <!-- <script defer src="./Final-project.js"></script> -->
+    <script defer src="./search.js"></script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      .firstpage-container {
+        font-family: serif;
+        margin: 3px 3px;
+      }
+
+      main {
+        height: 100vh;
+
+        .header-1 {
+          align-items: baseline;
+        }
+
+        .welcome {
+          color: rgb(72, 72, 72);
+          font-size: 1.4rem;
+        }
+        .bannerImg {
+          width: 100%;
+          height: 400px;
+          padding: 1rem;
+          object-fit: contain;
+        }
+
+        .searchBar {
+          width: 20rem;
+          padding: 0.25rem;
+        }
+
+        .bookList-ul {
+          text-align: center;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: 1fr 1fr 1fr;
+        }
+
+        @media only screen and (min-width: 868px) {
+          .bookList-ul {
+            grid-template-columns: repeat(3, 1fr);
+          }
+        }
+      }
+
+      .searchResults {
+        font-size: 2rem;
+        text-align: center;
+      }
+
+      footer {
+        position: fixed;
+        bottom: 6px;
+        right: 6px;
+        left: 6px;
+        background-color: rgb(201, 199, 199);
+        text-align: center;
+        z-index: 0;
+      }
+
+      .footer p a {
+        padding: 2%;
+        margin: 5%;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container" id="container">
+      <header class="header-1">
+        <span class="welcome">Welcome User, you are now signed in!</span>
+      </header>
+      <header class="header-2">
+        <a href="index.html">
+          <img
+            src="https://images.unsplash.com/photo-1491841573634-28140fc7ced7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            id="logo"
+            alt="logo"
+          />
+        </a>
+        <nav id="searchNav">
+          <input
+            type="text"
+            id="searchBar"
+            class="searchBar"
+            placeholder="Search by Title, Author or ISBN"
+          />
+          <img src="./search-icon.svg" id="searchImg" alt="" />
+        </nav>
+      </header>
+      <p class="searchResults">Search results</p>
+      <main>
+        <ul id="bookList-ul" class="bookList-ul"></ul>
+      </main>
+      <footer class="footer">
+        <p>&copy;Copyright 2023, All rights reserved</p>
+
+        <a href="/privacy">Privacy Policy</a>
+        <a href="/T&C">Terms & Condition</a>
+        <a href="/productcontentpolicy">Product Content Policy</a>
+      </footer>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OneStop BookShop</title>
+    
+
+
+    <link rel="stylesheet" href="./Final-project.css" />
+    <script defer src="./Final-project.js"></script>
+  </head>
+  <body>
+    <section id="overlay"></section>
+    <section class="firstpage-container" id="container">
+      <header class="header-1">
+        <section class="left-btn">
+          <button class="signIn-btn" id="signInBtn">Sign In</button>
+
+          <button class="register-btn" id="registerBtn">Register</button>
+        </section>
+
+        <section class="right-btn">
+          <button class="checkout-btn" id="checkOutBtn">Checkout</button>
+        </section>
+
+        <div id="modalSignin" class="modalSignin">
+          <form action="./SignIn.html">
+            <input type="text" placeholder="Email Address" />
+            <input type="text" placeholder="Password" />
+            <button>Sign In</button>
+            <a href="#" class="passwordlink">Forgotten your passowrd? </a>
+          </form>
+
+          <span id="closeBtn">&times</span>
+        </div>
+      </header>
+      <header class="header-2">
+        <img
+          src="https://images.unsplash.com/photo-1491841573634-28140fc7ced7?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          id="logo"
+          alt="logo"
+        />
+
+        <nav id="searchNav">
+          <input
+            type="text"
+            id="searchBar" class="searchBar"
+            placeholder="Search by Title, Author or ISBN"
+          />
+          <select name="product-options" id="prodOpt">
+            <option value="All products">All products</option>
+            <option value="Books">Books</option>
+            <option value="e-books">e-books</option>
+            <option value="Magazines">Magazines</option>
+            <option value="Giftcards">Giftcards</option>
+            <option value="Audio-books">Audio-books</option>
+          </select>
+
+          <img
+            src="https://media.istockphoto.com/id/1044689226/photo/magnifying-glass-isolated-on-white-background-with-clipping-path.jpg?s=1024x1024&w=is&k=20&c=LZm9q-B4o6bF42DyCpMI1167xwEzdZYxKUEowWGD4ag="
+            id="searchImg"
+            alt=""
+          />
+        </nav>
+      </header>
+      <section class="main-category" id="mainCategory">
+        <nav>
+          <ul id="categoryUl">
+            <li><a href="#" id="booksBtn" class="btn">Books</a></li>
+            <li><a href="#" id="ebooksBtn" class="btn">e-Books</a></li>
+            <li><a href="#" id="magazineBtn" class="btn">Magazine</a></li>
+            <li><a href="#" id="stationaryBtn" class="btn">Stationary</a></li>
+            <li><a href="#" id="giftCard" class="btn">Giftcard</a></li>
+          </ul>
+          <ul id="bookList" class="sub-cat">
+            <li>Fiction</li>
+            <li>Non Fiction</li>
+            <li>Kids</li>
+            <li>Academic</li>
+            <li>Popular</li>
+          </ul>
+          <ul id="ebookList" class="sub-cat">
+            <li>Fiction</li>
+            <li>Non Fiction</li>
+            <li>Best Sellers</li>
+            <li>Education</li>
+            <li>Test Books</li>
+          </ul>
+          <ul id="magazineList" class="sub-cat">
+            <li>Life Style</li>
+            <li>Hobbies</li>
+            <li>Entetainment</li>
+            <li>Sports</li>
+            <li>Travel</li>
+          </ul>
+          <ul id="statList" class="sub-cat">
+            <li>Stationary</li>
+            <li>Diaries</li>
+            <li>Calenders</li>
+            <li>Journals</li>
+            <li>NoteBooks</li>
+          </ul>
+        </nav>
+
+        <section id="mainContainer" class="mainContainer">
+          <span class="Bestseller-title">Bestsellers</span>
+          <ul id="bestsellers" class="bestsellers">
+            <li>
+              <a href="#" class="bestseller-list">
+                <div class="bestseller-content">
+                  <span class="title">The Secret</span>
+                  <span class="author">Lee Child</span>
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="bestseller-list">
+                <div class="bestseller-content">
+                  <span class="title">Black Sheep</span>
+                  <span class="author">Judy Nunn</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="bestseller-list">
+                <div class="bestseller-content">
+                  <span class="title">Sunee Side Up</span>
+                  <span class="author">Sarah's Day</span>
+                </div>
+              </a>
+            </li>
+            
+            <li>
+              <a href="#" class="bestseller-list">
+                <div class="bestseller-content">
+                  <span class="title"
+                    >The Last Charge of the Australian Light House</span
+                  >
+                  <span class="author">Peter FitzSimons</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="bestseller-list">
+                <div class="bestseller-content">
+                  <span class="title">Lola in the Mirror</span>
+                  <span class="author">Trent Dalton</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="bestseller-list">
+                <div class="bestseller-content">
+                  <span class="title">The Psychology of Money</span>
+                  <span class="author">Morgan Housel</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="bestseller-list">
+                <div class="bestseller-content">
+                  <span class="title">The Thursday Murder Club</span>
+                  <span class="author">Richard Osman</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="bestseller-list">
+                <div class="bestseller-content">
+                  <span class="title"
+                    >Friends, lovers, and the Big Terrible Thing</span
+                  >
+                  <span class="author">Mathew Perry</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="bestseller-list">
+                <div class="bestseller-content">
+                  <span class="title">Prophet Song</span>
+                  <span class="author">Paul Lynch</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="bestseller-list">
+                <div class="bestseller-content">
+                  <span class="title">The Last Devil to Die</span>
+                  <span class="author">Richard Osman</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="bestseller-list">
+                <div class="bestseller-content">
+                  <span class="title">The Seven</span>
+                  <span class="author">Chris Hammer</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="bestseller-list">
+                <div class="bestseller-content">
+                  <span class="title">Fourth Wing</span>
+                  <span class="author">Rebecca Yarros</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+
+          <article id="bannerSection" class="bannerSection">
+            <a href="library.html"
+              ><img
+                id="readingQuote"
+                class="bannerImg"
+                src="readingQuote.png"
+                alt="reading Quote"
+            /></a>
+
+            <nav id="bannerUnder" class="bannerUnder">
+              
+              <a href="#" id="bannerUnderTab" class="bannerUnderTab">
+                <img
+                  src="https://st2.depositphotos.com/2274151/42637/v/450/depositphotos_426376618-stock-illustration-new-release-stamp-new-release.jpg"
+                  id="newRelease"
+                  class="Btn-img"
+                />
+                <button class="btnshop"">Shop New Release</button></a
+              >
+              <a href="#" id="bannerUnderTab" class="bannerUnderTab"
+                ><img
+                  src="https://img.freepik.com/free-vector/best-seller-rubber-stamps-set-four_1017-25902.jpg?w=2000"
+                  alt=""
+                  id="bestSellerBtn"
+                  class="Btn-img"
+                />
+                <button class="btnshop">Shop Bestseller</button></a
+              >
+              <a href="#" id="bannerUnderTab" class="bannerUnderTab"
+                ><img
+                  src="https://helios-i.mashable.com/imagery/series/06qGbgqhQ0LUTI6lh6dFENz/logo.fill.size_1200x675.v1685628878.png"
+                  alt=""
+                  id="BestBook23"
+                  class="Btn-img"
+                />
+                <button class="btnshop">Explore Best Books of 2023</button></a
+              >
+              <a href="#" id="bannerUnderTab" class="bannerUnderTab"
+                ><img
+                  src="./Staff-Pick.png"
+                  id="staffPicks"
+                  class="Btn-img"
+                />
+                <button class="btnshop">Shop Staff Picks</button></a
+              >
+            </nav>
+          </article>
+        </section>
+        <aside>
+          <h3>Trending Now</h3>
+          <div id="trendingNow">
+          <img src="https://covers.booktopia.com.au/150/9781761067426.jpg" id="book1" class="trendingnow" />
+          <img src="https://www.booktopia.com.au/covers/big/9781460760253/9104/bright-shining.jpg" id="book2" class="trendingnow" />
+          <img src="https://www.angusrobertson.com.au/images/5733/9781787633780.jpg?width=250" id="book3" class="trendingnow" alt="" />
+        </div>
+        </aside>
+      </section>
+      <footer class="footer">
+        <p>&copy;Copyright 2023, All rights reserved</p>
+        <p>
+          <a href="/privacy">Privacy Policy</a>
+          <a href="/T&C">Terms & Condition</a>
+          <a href="/productcontentpolicy">Product Content Policy</a>
+        </p>
+      </footer>
+    </section>
+  </body>
+</html>

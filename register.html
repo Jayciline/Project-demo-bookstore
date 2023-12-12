@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <section class="section">
+        <h1 class="title">Register</h1>
+        <h2 class="subtitle">
+          Create an user account for personalized experience
+        </h2>
+
+        <form>
+          <div class="field">
+            <p class="control has-icons-left has-icons-right">
+              <input
+                id="username"
+                class="input"
+                type="text"
+                placeholder="Name"
+              />
+              <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <span class="icon is-small is-right">
+                <i class="fas fa-check"></i>
+              </span>
+            </p>
+          </div>
+          <div class="field">
+            <p class="control has-icons-left has-icons-right">
+              <input class="input" type="email" placeholder="Email" />
+              <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <span class="icon is-small is-right">
+                <i class="fas fa-check"></i>
+              </span>
+            </p>
+          </div>
+          <div class="field">
+            <p class="control has-icons-left">
+              <input class="input" type="password" placeholder="Password" />
+              <span class="icon is-small is-left">
+                <i class="fas fa-lock"></i>
+              </span>
+            </p>
+          </div>
+          <div class="buttons">
+            <a id="register-btn" class="button is-danger">Register</a>
+          </div>
+        </form>
+      </section>
+    </div>
+
+    <script>
+      const registerBtn = document.querySelector("#register-btn");
+      registerBtn.addEventListener("click", function () {
+        const username = document.querySelector("#username").value;
+        window.location.href = "index.html?name=" + username;
+      });
+    </script>
+  </body>
+</html>
